@@ -12,9 +12,9 @@ RUN cd ~ \
 	&& unzip ulsy.zip && rm ulsy.zip\
 	&& cd ulsy \
 	&& latex ulsy.ins \
-	&& mkdir /usr/share/texlive/texmf-dist/tex/latex/ulsy \
-	&& mkdir /usr/share/texlive/texmf-dist/fonts/tfm/public/ulsy \
-	&& mkdir /usr/share/texlive/texmf-dist/fonts/source/public/ulsy \
+	&& mkdir -p /usr/share/texlive/texmf-dist/tex/latex/ulsy \
+	&& mkdir -p /usr/share/texlive/texmf-dist/fonts/tfm/public/ulsy \
+	&& mkdir -p /usr/share/texlive/texmf-dist/fonts/source/public/ulsy \
 	&& mv ulsy.sty /usr/share/texlive/texmf-dist/tex/latex/ulsy/ \
 	&& mv Uulsy.fd /usr/share/texlive/texmf-dist/tex/latex/ulsy/ \
 	&& mv ulsy10.tfm /usr/share/texlive/texmf-dist/fonts/tfm/public/ulsy/ \
